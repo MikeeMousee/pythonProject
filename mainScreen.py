@@ -5,7 +5,6 @@ def back(wn):
     wn.destroy()
     main()
 
-
 def main():
     win1=Tk()
     win1.title("Welcome")
@@ -20,9 +19,6 @@ def main():
 
     loginButton= Button(win1,text="Log in", width=12, command=lambda:login())
     loginButton.grid(row=1, column=1, padx=10,pady=10)
-
-    teacherLoginButton= Button(win1, text="Teacher log in", width=15, command=lambda:Tlogin())
-    teacherLoginButton.grid(row=1,column=2, padx=10, pady=10)
 
     mainloop()
 

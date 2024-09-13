@@ -87,7 +87,7 @@ def view_assignments(self):
 # Add a new student to the database
 def add_student_account(): #
     new_username = new_student_username_entry.get()
-     new_password = new_student_password_entry.get()
+    new_password = new_student_password_entry.get()
 
     hashed_password = hash_password(new_password)
 

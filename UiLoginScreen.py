@@ -1,5 +1,5 @@
 import tkinter as tk
-import main as sqlcode
+import SqlCode as sqlcode
 
 class HomeworkTrackerApp(tk.Tk):
     def __init__(self):
@@ -44,7 +44,7 @@ class HomeworkTrackerApp(tk.Tk):
     # Login handler (common for teacher and student)
     def login(self, username, password, role):
         conn = sqlcode.connect_db()
-        cursor = conn.cursor()
+        cursor = sqlcode.conn.cursor()
         cursor.execute("SELECT * FROM users WHERE username=? AND role=?", (username, role))
         result = cursor.fetchone()
         conn.close()

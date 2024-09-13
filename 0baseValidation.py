@@ -40,4 +40,7 @@ def isFloat(data):
     else:
         return False
 
-def
+def validateUser(data):
+
+def validatePassword(data):
+    if lengthCheck()
